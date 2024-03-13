@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+div#buttons {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 3px;
+    width: 100px;
+    background-color: #85f505;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    border: 1px solid #830dd1;
+    padding: 3px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+img {
+    width: 120px;
+    border-radius: 5px;
+}
+
+p#name {
+    color: white;
+    padding-left: 2px;
+}
+
+p#price {
+    color: #85f505;
+    padding-left: 2px;
+}
