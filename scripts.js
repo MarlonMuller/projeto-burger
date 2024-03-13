@@ -1,8 +1,19 @@
-const myLi = document.querySelector("#myLis")
+const list = document.querySelector("#list")
+const buttonMostrar = document.querySelector("#mostrarTudo")
+let myList = ""
 
-myLi.innerHTML = `
+
+function mostrar() {
+
+    menuOptions.forEach(product => {
+        myList += `
         <li>
-            <img src="assets/bacon-egg.png" alt="burger bacon egg">
-            <p id="name">X-salada</p>
-            <p id="price">R$ 30</p>
-        </li>`
+            <img src=${product.src} alt=${product.name}>
+            <p id="name">${product.name}</p>
+            <p id="price">R$ ${product.price},00</p>
+        </li>
+    `
+    })
+list.innerHTML = myList
+}
+buttonMostrar.addEventListener("click", mostrar)

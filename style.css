@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    background-color: #000000;
+
 }
 
 div#buttons {
@@ -24,6 +25,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
 li {
@@ -35,6 +37,7 @@ li {
 
 img {
     width: 120px;
+    max-height: 100px;
     border-radius: 5px;
 }
 
